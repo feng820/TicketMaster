@@ -55,12 +55,6 @@ public class RecommandItem extends HttpServlet {
 			array.put(item.toJSONObject());
 		}
 		RpcHelper.writeJsonArray(response, array);	
-		try {
-			RpcHelper.writeJsonObject(response, new JSONObject().put("result", "SUCCESS"));
-		} catch (JSONException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	}
 
 	/**
