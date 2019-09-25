@@ -45,7 +45,7 @@ public class ItemHistory extends HttpServlet {
 			return;
 		}
 		String userId = session.getAttribute("user_id").toString(); 	
-		// String userId = request.getParameter("user_id");
+		//String userId = request.getParameter("user_id");
 		JSONArray array = new JSONArray();
 
 		DBConnection conn = DBConnectionFactory.getConnection();

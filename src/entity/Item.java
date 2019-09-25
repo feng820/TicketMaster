@@ -70,8 +70,6 @@ public class Item {
 		this.distance = builder.distance;
 	}
 	
-
-
 	public String getItemId() {
 		return itemId;
 	}
@@ -93,14 +91,9 @@ public class Item {
 	public String getUrl() {
 		return url;
 	}
-
-
-
 	public double getDistance() {
 		return distance;
 	}
-
-
 
 	public JSONObject toJSONObject() {
 		JSONObject obj = new JSONObject();

@@ -17,7 +17,6 @@ import org.json.JSONObject;
 import db.DBConnection;
 import db.DBConnectionFactory;
 import entity.Item;
-import external.TicketMasterClient;
 
 /**
  * Servlet implementation class SearchItem
@@ -48,7 +47,6 @@ public class SearchItem extends HttpServlet {
 
 		double lat = Double.parseDouble(request.getParameter("lat"));
 		double lon = Double.parseDouble(request.getParameter("lon"));
-
 		String term = request.getParameter("term");
 		DBConnection connection = DBConnectionFactory.getConnection();
 		try {
